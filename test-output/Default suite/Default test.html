@@ -1,0 +1,1865 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/46/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 03 16:52:04 EDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>82 seconds (82298 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Insertion", "Linked List page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/LinkedList.feature:74)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1111497601", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1111497601'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/LinkedList.feature:74)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for password with characters less than 8", "user registration page"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_enters_and_with_characters_less_than_eight_and_and_user_clicks_register_button(Register.java:125)
+	at ✽.The user enters &quot;username&quot; and &quot;password&quot; with characters less than eight and &quot;confirm_password&quot; and user clicks register button(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:63)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1911860918", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1911860918'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_enters_and_with_characters_less_than_eight_and_and_user_clicks_register_button(Register.java:125)
+	at ✽.The user enters &quot;username&quot; and &quot;password&quot; with characters less than eight and &quot;confirm_password&quot; and user clicks register button(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:63)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Applications of Binary Trees", "Tree page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:125)
+</pre></div><a href='#' onClick='toggleBox("stack-trace970777311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace970777311'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:125)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Deletion", "Linked List page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/LinkedList.feature:84)
+</pre></div><a href='#' onClick='toggleBox("stack-trace866589987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace866589987'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/LinkedList.feature:84)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigate to Array Practice Page and works in Squares of  a Sorted Array", "DS Algo ArrayPractice Page"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User is in Array Practice homepage&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;User is in Array Practice homepage&quot;)
+public void user_is_in_array_practice_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User clicks {string} fourth link in the Array Practice list&quot;)
+public void user_clicks_fourth_link_in_the_array_practice_list(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user clears the text and enter python code&quot;)
+public void user_clears_the_text_and_enter_python_code() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user enters python code&quot;)
+public void user_enters_python_code(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
+    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user gets the error message&quot;)
+public void user_gets_the_error_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace723161117", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace723161117'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User is in Array Practice homepage&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;User is in Array Practice homepage&quot;)
+public void user_is_in_array_practice_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User clicks {string} fourth link in the Array Practice list&quot;)
+public void user_clicks_fourth_link_in_the_array_practice_list(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user clears the text and enter python code&quot;)
+public void user_clears_the_text_and_enter_python_code() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user enters python code&quot;)
+public void user_enters_python_code(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
+    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user gets the error message&quot;)
+public void user_gets_the_error_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to Tree page and works on Overview of Trees 1st link in the Tree", "Tree page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:27)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1201228625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1201228625'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:27)
+</pre></div></td>
+<td>2</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Implement Linked List in Python", "Linked List page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/LinkedList.feature:54)
+</pre></div><a href='#' onClick='toggleBox("stack-trace389749489", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace389749489'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/LinkedList.feature:54)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to Stack page and works on Operations in Stack", "Stack page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Stack.feature:27)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1000958311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1000958311'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Stack.feature:27)
+</pre></div></td>
+<td>2</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Applications", "Stack page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Stack.feature:47)
+</pre></div><a href='#' onClick='toggleBox("stack-trace750529970", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace750529970'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Stack.feature:47)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid username", "user registration page"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_enters_a_with_characters_other_than_letters_digits_and_with_and_and_user_clicks_register_button(Register.java:96)
+	at ✽.The user enters a &quot;username&quot; with characters other than Letters, digits and @/./+/-/_   with &quot;password&quot; and &quot;confirm_password&quot; and user clicks register button(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:47)
+</pre></div><a href='#' onClick='toggleBox("stack-trace370428315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace370428315'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_enters_a_with_characters_other_than_letters_digits_and_with_and_and_user_clicks_register_button(Register.java:96)
+	at ✽.The user enters a &quot;username&quot; with characters other than Letters, digits and @/./+/-/_   with &quot;password&quot; and &quot;confirm_password&quot; and user clicks register button(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:47)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Getting register into page with username and password", "user registration page"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.register_link(registerPage.java:147)
+	at StepDefinition.Register.the_user_clicks_register_button_after_entering_and(Register.java:148)
+	at ✽.The user clicks Register button after entering &quot;user95name&quot;, &quot;sdet&quot; and &quot;sdet95batch&quot;(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:79)
+</pre></div><a href='#' onClick='toggleBox("stack-trace964736079", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace964736079'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.register_link(registerPage.java:147)
+	at StepDefinition.Register.the_user_clicks_register_button_after_entering_and(Register.java:148)
+	at ✽.The user clicks Register button after entering &quot;user95name&quot;, &quot;sdet&quot; and &quot;sdet95batch&quot;(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:79)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Implementation of Binary Trees", "Tree page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:115)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2058316797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2058316797'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:115)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Traversal-Illustration", "Tree page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:65)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1198084986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1198084986'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:65)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to datastructure page", "DataStructure page"</td>
+<td><div><pre>java.io.FileNotFoundException: .src\test\resources\config.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at pages.CollectionsPage.loginWithUernamePwd(CollectionsPage.java:442)
+	at StepDefinition.Collections.user_login_with_username_and_password_given_through_config(Collections.java:442)
+	at ✽.user login with username &quot;USERNAME&quot; and password &quot;PASSWORD&quot; given through config(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/DataStructure.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace78849125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace78849125'><pre>java.io.FileNotFoundException: .src\test\resources\config.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at pages.CollectionsPage.loginWithUernamePwd(CollectionsPage.java:442)
+	at StepDefinition.Collections.user_login_with_username_and_password_given_through_config(Collections.java:442)
+	at ✽.user login with username &quot;USERNAME&quot; and password &quot;PASSWORD&quot; given through config(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/DataStructure.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for password with only numbers", "user registration page"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_enters_and_with_only_numbers_and_and_user_clicks_register_button(Register.java:137)
+	at ✽.The user enters &quot;username&quot; and   &quot;password&quot; with only numbers and &quot;confirm_password&quot; and user clicks register button(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:71)
+</pre></div><a href='#' onClick='toggleBox("stack-trace18758920", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18758920'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_enters_and_with_only_numbers_and_and_user_clicks_register_button(Register.java:137)
+	at ✽.The user enters &quot;username&quot; and   &quot;password&quot; with only numbers and &quot;confirm_password&quot; and user clicks register button(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:71)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Getting register into page with username and password", "user registration page"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.register_link(registerPage.java:147)
+	at StepDefinition.Register.the_user_clicks_register_button_after_entering_and(Register.java:148)
+	at ✽.The user clicks Register button after entering &quot;Numpyninja95AT&quot;, &quot;sdet95batchAT&quot; and &quot;sdet95batchAT&quot;(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:79)
+</pre></div><a href='#' onClick='toggleBox("stack-trace130574494", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace130574494'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.register_link(registerPage.java:147)
+	at StepDefinition.Register.the_user_clicks_register_button_after_entering_and(Register.java:148)
+	at ✽.The user clicks Register button after entering &quot;Numpyninja95AT&quot;, &quot;sdet95batchAT&quot; and &quot;sdet95batchAT&quot;(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:79)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Terminologies in Trees", "Tree page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2006486085", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2006486085'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:36)
+</pre></div></td>
+<td>2</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Types of Linked Lists", "Linked List page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/LinkedList.feature:45)
+</pre></div><a href='#' onClick='toggleBox("stack-trace168066011", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace168066011'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/LinkedList.feature:45)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for existing username", "user registration page"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_enters_a_valid_existing_with_and(Register.java:168)
+	at ✽.The user enters a valid existing &quot;username&quot; with &quot;password&quot; and &quot;confirm_password&quot;(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:89)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1458013496", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1458013496'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_enters_a_valid_existing_with_and(Register.java:168)
+	at ✽.The user enters a valid existing &quot;username&quot; with &quot;password&quot; and &quot;confirm_password&quot;(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:89)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Opeing DS-Algo portal link", "DS-ALGO Project"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class=&apos;alert alert-primary&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=xpath, value=//*[@class=&apos;alert alert-primary&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy45.getText(Unknown Source)
+	at pages.CollectionsPage.errorMessage(CollectionsPage.java:170)
+	at StepDefinition.Collections.user_get_alert_message(Collections.java:74)
+	at ✽.user get alert message &quot;you are not logged in&quot;(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/MainPage.feature:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace842821532", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace842821532'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class=&apos;alert alert-primary&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=xpath, value=//*[@class=&apos;alert alert-primary&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy45.getText(Unknown Source)
+	at pages.CollectionsPage.errorMessage(CollectionsPage.java:170)
+	at StepDefinition.Collections.user_get_alert_message(Collections.java:74)
+	at ✽.user get alert message &quot;you are not logged in&quot;(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/MainPage.feature:30)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigate to Array Practice Page and works in Find Numbers with Even Number of Digits", "DS Algo ArrayPractice Page"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User is in Array Practice homepage&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;User is in Array Practice homepage&quot;)
+public void user_is_in_array_practice_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User clicks {string} third link in the Array Practice list&quot;)
+public void user_clicks_third_link_in_the_array_practice_list(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user clears the text and enter python code&quot;)
+public void user_clears_the_text_and_enter_python_code() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user enters python code&quot;)
+public void user_enters_python_code(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
+    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1816269091", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1816269091'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User is in Array Practice homepage&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;User is in Array Practice homepage&quot;)
+public void user_is_in_array_practice_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User clicks {string} third link in the Array Practice list&quot;)
+public void user_clicks_third_link_in_the_array_practice_list(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user clears the text and enter python code&quot;)
+public void user_clears_the_text_and_enter_python_code() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user enters python code&quot;)
+public void user_enters_python_code(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
+    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for password mismatch", "user registration page"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_enters_and_different_passwords_in_and_fields_and_user_clicks_register_button(Register.java:113)
+	at ✽.The user enters &quot;username&quot; and different passwords in &quot;password&quot; and &quot;confirm_password&quot; fields and user clicks register button(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:55)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1943524982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1943524982'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_enters_and_different_passwords_in_and_fields_and_user_clicks_register_button(Register.java:113)
+	at ✽.The user enters &quot;username&quot; and different passwords in &quot;password&quot; and &quot;confirm_password&quot; fields and user clicks register button(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:55)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to Linked List page and works on Introduction on Linked List", "Linked List page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/LinkedList.feature:27)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1423636729", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1423636729'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/LinkedList.feature:27)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Implementation Stack", "Stack page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Stack.feature:37)
+</pre></div><a href='#' onClick='toggleBox("stack-trace374625527", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace374625527'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Stack.feature:37)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Implementation of BST", "Tree page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:144)
+</pre></div><a href='#' onClick='toggleBox("stack-trace456824281", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace456824281'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:144)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Graph Representations", "Graph page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Graph.feature:37)
+</pre></div><a href='#' onClick='toggleBox("stack-trace471897798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace471897798'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Graph.feature:37)
+</pre></div></td>
+<td>2</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Traversal", "Linked List page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/LinkedList.feature:64)
+</pre></div><a href='#' onClick='toggleBox("stack-trace243821743", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace243821743'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/LinkedList.feature:64)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Binary Trees", "Tree page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:75)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1489660835", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1489660835'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:75)
+</pre></div></td>
+<td>2</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to datastructure page", "DataStructure page"</td>
+<td><div><pre>java.io.FileNotFoundException: .src\test\resources\config.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at pages.CollectionsPage.loginWithUernamePwd(CollectionsPage.java:442)
+	at StepDefinition.Collections.user_login_with_username_and_password_given_through_config(Collections.java:442)
+	at ✽.user login with username &quot;USERNAME&quot; and password &quot;PASSWORD&quot; given through config(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/DataStructure.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1805708874", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1805708874'><pre>java.io.FileNotFoundException: .src\test\resources\config.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at pages.CollectionsPage.loginWithUernamePwd(CollectionsPage.java:442)
+	at StepDefinition.Collections.user_login_with_username_and_password_given_through_config(Collections.java:442)
+	at ✽.user login with username &quot;USERNAME&quot; and password &quot;PASSWORD&quot; given through config(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/DataStructure.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Implementation Using Collection.deque", "Queue page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Queue.feature:37)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1890190272", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1890190272'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Queue.feature:37)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for empty fields below Password textbox", "user registration page"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_enters_with_other_fields_empty_and_user_clicks_register_button(Register.java:53)
+	at ✽.The user  enters &quot;username&quot; with other fields empty and user clicks register button(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1076882309", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1076882309'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_enters_with_other_fields_empty_and_user_clicks_register_button(Register.java:53)
+	at ✽.The user  enters &quot;username&quot; with other fields empty and user clicks register button(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:31)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Implementation in Python", "Tree page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:95)
+</pre></div><a href='#' onClick='toggleBox("stack-trace43856881", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace43856881'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:95)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for empty fields below Username textbox", "user registration page"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_clicks_button_with_all_fields_empty(Register.java:40)
+	at ✽.The user clicks &quot;Register&quot; button with all fields empty(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:25)
+</pre></div><a href='#' onClick='toggleBox("stack-trace395076193", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace395076193'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_clicks_button_with_all_fields_empty(Register.java:40)
+	at ✽.The user clicks &quot;Register&quot; button with all fields empty(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:25)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Types of Binary Trees", "Tree page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:85)
+</pre></div><a href='#' onClick='toggleBox("stack-trace374875381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace374875381'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:85)
+</pre></div></td>
+<td>2</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Tree Traversals", "Tree page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:55)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1429297664", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1429297664'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:55)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigate to Array Practice Page and works in Search the array", "DS Algo ArrayPractice Page"</td>
+<td><div><pre>java.io.FileNotFoundException: .src\test\resources\config.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at pages.CollectionsPage.loginWithUernamePwd(CollectionsPage.java:442)
+	at StepDefinition.Collections.user_login_with_username_and_password_given_through_config(Collections.java:442)
+	at ✽.user login with username &quot;Numpyninja95AT&quot; and password &quot;sdet95batchAT&quot; given through config(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/ArrayPractice.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1022680775", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1022680775'><pre>java.io.FileNotFoundException: .src\test\resources\config.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at pages.CollectionsPage.loginWithUernamePwd(CollectionsPage.java:442)
+	at StepDefinition.Collections.user_login_with_username_and_password_given_through_config(Collections.java:442)
+	at ✽.user login with username &quot;Numpyninja95AT&quot; and password &quot;sdet95batchAT&quot; given through config(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/ArrayPractice.feature:24)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to Queue page and works on Implementation Queue in Python", "Queue page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Queue.feature:27)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1838342951", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1838342951'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Queue.feature:27)
+</pre></div></td>
+<td>2</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for empty fields below confirm Password textbox", "user registration page"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_enters_and_with_password_confirmation_field_empty_and_user_clicks_register_button(Register.java:78)
+	at ✽.The user  enters &quot;username&quot; and &quot;password&quot; with Password Confirmation field empty and user clicks register button(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:39)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1469899497", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1469899497'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe76d4a-aad3-426d-bdc5-e05f3eea5d97, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:22539, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8648, moz:profile: C:\Users\dadit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22539/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe76d4a-aad3-426d-bdc5-e05f3eea5d97
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.registerPage.clickRegisterLink(registerPage.java:49)
+	at StepDefinition.Register.the_user_enters_and_with_password_confirmation_field_empty_and_user_clicks_register_button(Register.java:78)
+	at ✽.The user  enters &quot;username&quot; and &quot;password&quot; with Password Confirmation field empty and user clicks register button(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Register.feature:39)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to Graph page and works on  Graph", "Graph page"</td>
+<td><div><pre>java.io.FileNotFoundException: .src\test\resources\config.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at pages.CollectionsPage.loginWithUernamePwd(CollectionsPage.java:442)
+	at StepDefinition.Collections.user_login_with_username_and_password_given_through_config(Collections.java:442)
+	at ✽.user login with username &quot;USERNAME&quot; and password &quot;PASSWORD&quot; given through config(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Graph.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace194746285", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace194746285'><pre>java.io.FileNotFoundException: .src\test\resources\config.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at pages.CollectionsPage.loginWithUernamePwd(CollectionsPage.java:442)
+	at StepDefinition.Collections.user_login_with_username_and_password_given_through_config(Collections.java:442)
+	at ✽.user login with username &quot;USERNAME&quot; and password &quot;PASSWORD&quot; given through config(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Graph.feature:23)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Implementation Using Array", "Queue page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Queue.feature:47)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1504320796", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1504320796'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Queue.feature:47)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Types of Trees", "Tree page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:45)
+</pre></div><a href='#' onClick='toggleBox("stack-trace960394566", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace960394566'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:45)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Binary Tree Traversals", "Tree page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:105)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1005872204", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1005872204'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:105)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Binary Search Trees", "Tree page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:135)
+</pre></div><a href='#' onClick='toggleBox("stack-trace416519915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace416519915'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Tree.feature:135)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Queue Operations", "Queue page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Queue.feature:57)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1230752231", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1230752231'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/Queue.feature:57)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user does Creating Linked List", "Linked List page"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/LinkedList.feature:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1669417918", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1669417918'><pre>java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type InterruptedException
+	Unhandled exception type InvalidFormatException
+
+	at pages.CollectionsPage.enterPythonCode(CollectionsPage.java:258)
+	at StepDefinition.Collections.user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(Collections.java:194)
+	at ✽.user enters code in tryEditor from &quot;pythonCode&quot; and 0  then click run , output is printed(file:///C:/Users/dadit/eclipse-workspace/DS-Algo/src/test/resources/features/LinkedList.feature:36)
+</pre></div></td>
+<td>1</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigate to Array Practice Page and works in Max Consecutive Ones", "DS Algo ArrayPractice Page"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User is in Array Practice homepage&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;User is in Array Practice homepage&quot;)
+public void user_is_in_array_practice_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User clicks {string} second link in the Array Practice list&quot;)
+public void user_clicks_second_link_in_the_array_practice_list(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user clears the text and enter python code&quot;)
+public void user_clears_the_text_and_enter_python_code() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user enters Python Code1 {string} from config&quot;)
+public void user_enters_python_code1_from_config(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user gets the error message&quot;)
+public void user_gets_the_error_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1058101486", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1058101486'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User is in Array Practice homepage&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;User is in Array Practice homepage&quot;)
+public void user_is_in_array_practice_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User clicks {string} second link in the Array Practice list&quot;)
+public void user_clicks_second_link_in_the_array_practice_list(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user clears the text and enter python code&quot;)
+public void user_clears_the_text_and_enter_python_code() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user enters Python Code1 {string} from config&quot;)
+public void user_enters_python_code1_from_config(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user gets the error message&quot;)
+public void user_gets_the_error_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to sign in  page", "DS-Algo Sign In"</td>
+<td></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to sign in  page", "DS-Algo Sign In"</td>
+<td></td>
+<td>2</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to sign in  page", "DS-Algo Sign In"</td>
+<td></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to sign in  page", "DS-Algo Sign In"</td>
+<td></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to sign in  page", "DS-Algo Sign In"</td>
+<td></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to sign in  page", "DS-Algo Sign In"</td>
+<td></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to sign in  page", "DS-Algo Sign In"</td>
+<td></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+<tr>
+<td title='runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigate to sign in  page", "DS-Algo Sign In"</td>
+<td></td>
+<td>0</td>
+<td>runner.testRunner@642a7222</td></tr>
+</table><p>
+</body>
+</html>
